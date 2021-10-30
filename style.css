@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+
+}
+body{
+	background-image: url('fondo.jpeg');
+	background-position: center;
+	background-size: 50%;
+}
+.card{
+	width: 50%;
+	margin: auto;
+	margin-top: 10%;
+	background-color: transparent;
+	padding: 5px 15px;
+	border-radius: 10px; 
+}
+.card .card-title{
+	transform: translateY(-165%) translateX(30%);
+}
+/*.card .card-title strong{
+	color: red !important;
+}*/
+.card label{
+	width: 100%;
+	color:#AF0404;
+}
+.card label input{
+	width: 100%;
+	padding: 8px 10px;
+	border-radius: 15px;
+	border: none;
+}
+.card label input:focus{
+	border: none !important;
+	box-shadow: none !important;
+}
+.card .card-link{
+	color: white;
+	text-decoration: none;	
+}
+.card .btn, .btn{
+	background: black;
+	margin-top: 15px !important;
+}
+
+/*popup estilos*/
+.modal_contenedor{
+	display: flex;
+	background-color: rgba(30, 32, 34,.8);
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	pointer-events: none;
+	opacity:0;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+}
+.show{
+	pointer-events: auto;
+	opacity: 1;
+}
+.modelo{
+	background-color: rgb(240, 245, 249);
+	width: 600px;
+	max-width: 100%;
+	padding: 30px 50px;
+	border-radius: 5px;
+	box-shadow:  0 2px 4px rgba(0,0,0,0.2);
+	text-align: center;
+}
