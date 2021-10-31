@@ -8,30 +8,34 @@
 
 }
 body{
-	background-image: url('fondo.jpeg');
+	background-image: url('img/bg-intro-desktop.png'), linear-gradient(86deg, rgb(0, 0, 0) 0%, rgb(0, 0, 1) 100%);
 	background-position: center;
-	background-size: 50%;
+	background-size: 100%;
 }
 .card{
-	width: 50%;
+    max-width: 35rem;
 	margin: auto;
 	margin-top: 10%;
 	background-color: transparent;
 	padding: 5px 15px;
-	border-radius: 10px; 
+	border-radius: 10px;
+    position: relative;
 }
 .card .card-title{
-	transform: translateY(-165%) translateX(30%);
+	position: absolute;
+    top:-1em;
+    left: 6em;
 }
 /*.card .card-title strong{
 	color: red !important;
 }*/
 .card label{
 	width: 100%;
-	color:#AF0404;
+	color:#C9D6DF;
+    margin-top: 15px;
 }
 .card label input{
-	width: 100%;
+	width: 80%;
 	padding: 8px 10px;
 	border-radius: 15px;
 	border: none;
@@ -39,14 +43,17 @@ body{
 .card label input:focus{
 	border: none !important;
 	box-shadow: none !important;
+    outline: none;
 }
 .card .card-link{
 	color: white;
 	text-decoration: none;	
 }
 .card .btn, .btn{
-	background: black;
+	background: linear-gradient(86deg ,rgb(15, 76, 117),rgb(50, 130, 184));
 	margin-top: 15px !important;
+    border-radius: 50px;
+    padding: 5px 20px;
 }
 
 /*popup estilos*/
